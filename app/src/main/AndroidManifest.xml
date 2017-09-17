@@ -48,7 +48,17 @@
             android:theme="@style/AppTheme" />
         <activity android:name=".SharePreference.ShareActivity" />
         <activity android:name=".AutoComplete.AutoCompleteActivity" />
-        <activity android:name=".RecyclerViewDemo.RecycleViewDemo"></activity>
+        <activity android:name=".RecyclerViewDemo.RecycleViewDemo" />
+        <activity android:name=".OnActivityResult.MainActivityResult" />
+        <activity android:name=".OnActivityResult.SeconActivityResult" />
+        <activity android:name=".PickImageGallery.GalleryMainActivity" />
+        <activity android:name=".ServiceDemo.ServiceActivityDemo" />
+
+        <service
+            android:name=".ServiceDemo.ServiceDemo"
+            android:enabled="true" />
+
+        <activity android:name=".Notification.NotificationActivityDemo"></activity>
     </application>
 
 </manifest>
