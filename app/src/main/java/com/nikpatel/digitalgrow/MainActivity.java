@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.nikpatel.digitalgrow.Alarm.AlarmActivity;
 import com.nikpatel.digitalgrow.Alert.Alert_Activity;
 import com.nikpatel.digitalgrow.AutoComplete.AutoCompleteActivity;
 import com.nikpatel.digitalgrow.Button.Btn_preActivity;
@@ -27,12 +28,13 @@ import com.nikpatel.digitalgrow.ServiceDemo.ServiceActivityDemo;
 import com.nikpatel.digitalgrow.SharePreference.ShareActivity;
 import com.nikpatel.digitalgrow.Spinner.SpinnerActivity;
 import com.nikpatel.digitalgrow.Table.TableActivity;
+import com.nikpatel.digitalgrow.Validation.RegistartionActivity;
 import com.nikpatel.digitalgrow.WebView.WebViewActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
    Button btn1,btn2,btn3,btn4,btn5,btn6,btn7,btn8,btn9,btn10,btn11,
-           btn12,btn13,btn14,btn15,btn16,btn17,btn18,btn19,btn20,btn21,btn22,btn23;
+           btn12,btn13,btn14,btn15,btn16,btn17,btn18,btn19,btn20,btn21,btn22,btn23,btn24,btn25;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,7 +63,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn21=(Button) findViewById(R.id.btn21);
         btn22=(Button) findViewById(R.id.btn22);
         btn23=(Button) findViewById(R.id.btn23);
-
+        btn24=(Button) findViewById(R.id.btn24);
+        btn25=(Button) findViewById(R.id.btn25);
 
 
         btn1.setOnClickListener(this);
@@ -87,6 +90,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn21.setOnClickListener(this);
         btn22.setOnClickListener(this);
         btn23.setOnClickListener(this);
+        btn24.setOnClickListener(this);
+        btn25.setOnClickListener(this);
     }
 
 
@@ -166,6 +171,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn23:
                 startActivity(new Intent(this,NotificationActivityDemo.class));
+                break;
+            case R.id.btn24:
+                startActivity(new Intent(this,AlarmActivity.class));
+                break;
+            case R.id.btn25:
+                startActivity(new Intent(this,RegistartionActivity.class));
                 break;
         }
     }

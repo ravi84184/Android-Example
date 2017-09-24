@@ -3,7 +3,9 @@
     package="com.nikpatel.digitalgrow">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
 
+    <uses-permission-sdk-23 android:name="android.permission.VIBRATE" />
     <uses-permission-sdk-23 android:name="android.permission.INTERNET" />
 
     <uses-permission android:name="android.permission.BLUETOOTH" />
@@ -58,7 +60,12 @@
             android:name=".ServiceDemo.ServiceDemo"
             android:enabled="true" />
 
-        <activity android:name=".Notification.NotificationActivityDemo"></activity>
+        <activity android:name=".Notification.NotificationActivityDemo" />
+        <activity android:name=".Alarm.AlarmActivity" />
+
+        <receiver android:name=".Alarm.AlarmBrodcastReceiver" />
+
+        <activity android:name=".Validation.RegistartionActivity"></activity>
     </application>
 
 </manifest>
